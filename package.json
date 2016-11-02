@@ -1,0 +1,33 @@
+{
+  "name": "restart-electron-webpack-plugin",
+  "version": "0.0.1",
+  "description": "Webpack plugin to restart Electron.",
+  "keywords": ["electron", "webpack", "plugin", "webpack-plugin", "restart", "start"],
+  "license": "MIT",
+  "author": {
+    "name": "Cyril Neruchev",
+    "email": "k.neruchev@gmail.com"
+  },
+  "homepage": "https://github.com/neruchev/restart-electron-webpack-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:neruchev/restart-electron-webpack-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neruchev/restart-electron-webpack-plugin/issues"
+  },
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build"
+  },
+  "peerDependencies": {
+    "electron": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-plugin-add-module-exports": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-babili": "*",
+    "babel-register": "*"
+  }
+}
