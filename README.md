@@ -29,8 +29,11 @@ module.exports = {
   ...
   plugins: [
     new RestartElectronPlugin({
-      // Defaults to process.cwd() + '/app.js'
+      // Defaults to process.cwd() + script
       script: 'path/to/app.js',
+
+      // The command line arguments to launch electron (optional)
+      arguments: ["--enable-logging"]
     }),
   ],
   ...
